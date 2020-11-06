@@ -17,16 +17,12 @@
 
       <a-camera>
         <a-entity id="mouseCursor"
-          cursor="fuse: true; fuseTimeout: 500">
+          cursor="fuse: true; fuseTimeout: 1500">
         </a-entity>
-        <a-box 
-         id="cursorRing" 
-         position="0 0 -1" 
-         material="color: blue; shader: flat" 
-         geometry="" vertex-c="1 1 1" 
-         height=".05" 
-         width=".05"> 
-      </a-box>
+        <a-ring id="cursorRing" 
+          position="0 0 -1"
+          material="color: blue; shader: flat">
+        </a-ring>
       </a-camera>
       
       <a-box id="myBox" 
